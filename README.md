@@ -1,4 +1,7 @@
-+# NQL — NoSQL Query Language
+# Punto 1 y 2:
+
+
+# NQL — NoSQL Query Language
 
 Lenguaje de consulta CRUD para bases de datos no relacionales en memoria, implementado en **Flex + Bison** y definido formalmente en **ANTLR4**.
 
