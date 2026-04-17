@@ -481,7 +481,7 @@ Punto4/
 ├── graficas.py          # Generación de gráficas
 ├── gramatica_cyk.txt    # Gramática en CNF usada por CYK
 ├── out.txt              # Resultados de ejecución (opcional)
-``
+```
 
 Implementación de un Parser utilizando el algoritmo CYK para realizar operaciones de una calculadora, para compararlas con un parser de tipo predictivo para comparar su rendimiento.
 
@@ -534,7 +534,7 @@ CYK crece rápidamente
 LL(1) se mantiene prácticamente constante
 ```
 
-![grafica1](grafica1.png)
+![grafica1](img/grafica1.png)
 
 ### 2. Escala logarítmica
 
@@ -545,7 +545,7 @@ CYK presenta comportamiento cúbico
 LL(1) se mantiene cercano a lineal
 ```
 
-![grafica2](grafica2.png)
+![grafica2](img/grafica2.png)
 
 ### 3. Relación de rendimiento (CYK / LL1)
 
@@ -556,7 +556,7 @@ La diferencia aumenta con el tamaño de la entrada
 CYK se vuelve significativamente menos eficiente
 ```
 
-![grafica3](grafica3.png)
+![grafica3](img/grafica3.png)
 
 ### 4. Complejidad
 
