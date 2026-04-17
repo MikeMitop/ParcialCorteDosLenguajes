@@ -600,7 +600,7 @@ El parser LL(1) presenta un desempeño significativamente superior al algoritmo 
 # Punto 5:
 
 ## Jerarquia de Carpetas:
-
+```
 ├── Punto5/
 │   ├──                         # Código fuente
 │   │   ├── calculadora_de_escritorio.y
@@ -619,6 +619,7 @@ El parser LL(1) presenta un desempeño significativamente superior al algoritmo 
 │   └── 
 │       └── test_lex.c
 │
+```
 
 Calculadora de Escritorio:
 
