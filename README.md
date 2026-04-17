@@ -1,12 +1,9 @@
-# Miguel Ángel Celis López
+**Estudiante:** Miguel Ángel Celis López  
+**Profesor:** Joaquín Fernando Sánchez  
+**Asignatura:** Lenguajes de Computación  
+**Ciudad:** Bogotá  
+**Año:** 2026
 
-# Parcial Segundo Corte Lenguajes de Computacion
-
-# Joaquin Fernando Sanchez
-
-# Lenguajes de Computación
-
-# 2026, Bogotá
 
 # Introducción:
 
@@ -491,8 +488,8 @@ python3 gramatica.py
 ![ejecucion3](img/ejecucion3.png)
 
 # Punto 4
-
 ## Jerarquia de carpetas:
+
 ```
 Punto4/
 │
