@@ -1,0 +1,21 @@
+true && false
+false
+
+!true
+false
+
+10 > 7
+true
+
+(2 + 3) * 4 >= 20
+true
+
+4 <= 4
+true
+
+3 + 2 == 5
+true
+
+false || true
+true
+
