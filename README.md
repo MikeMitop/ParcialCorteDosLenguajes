@@ -1,3 +1,16 @@
+# Miguel Ángel Celis López
+
+# Parcial Segundo Corte Lenguajes de Computacion
+
+# Joaquin Fernando Sanchez
+
+# Lenguajes de Computación
+
+# 2026, Bogotá
+
+
+
+
 # Punto 1 y 2:
 
 
