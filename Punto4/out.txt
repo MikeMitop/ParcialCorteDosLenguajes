@@ -1,0 +1,14 @@
+MESA-INTEL: warning: ../src/intel/vulkan/anv_formats.c:993: FINISHME: support more multi-planar formats with DRM modifiers
+MESA-INTEL: warning: ../src/intel/vulkan/anv_formats.c:959: FINISHME: support YUV colorspace with DRM format modifiers
+ Iniciando comparación CYK vs LL(1)
+N=010 | CYK: 0.00013s | LL1: 0.00001s
+N=030 | CYK: 0.00151s | LL1: 0.00000s
+N=050 | CYK: 0.00691s | LL1: 0.00000s
+N=070 | CYK: 0.01569s | LL1: 0.00001s
+N=090 | CYK: 0.03216s | LL1: 0.00001s
+N=110 | CYK: 0.08523s | LL1: 0.00001s
+N=130 | CYK: 0.09256s | LL1: 0.00003s
+N=150 | CYK: 0.17194s | LL1: 0.00002s
+N=170 | CYK: 0.20799s | LL1: 0.00002s
+N=190 | CYK: 0.28982s | LL1: 0.00001s
+EXIT:0
