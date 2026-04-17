@@ -185,7 +185,7 @@ eliminar usuario   # elimina todos
 
 ### Test FULL CRUD — 3 colecciones (`tests/test_full.nql`)
 
-Demostración de las 4 operaciones sobre las colecciones `usuario`, `producto` y `pedido` simultáneamente. ✅
+Demostración de las 4 operaciones sobre las colecciones `usuario`, `producto` y `pedido` simultáneamente. 
 
 ---
 
@@ -252,8 +252,8 @@ Se pueden escribir comentarios de línea con `#`:
 nuevo usuario { nombre: "Test" }   # comentario al final de línea
 ```
 
-![ejecucion1y2-1](ejecucion1y2-1.png)
-![ejecucion1y2-2](ejecucion1y2-2.png)
+![ejecucion1y2-1](img/ejecucion1y2-1.png)
+![ejecucion1y2-2](img/ejecucion1y2-2.png)
 
 # Punto 3;
 ## Jerarquía de carpetas:
@@ -560,7 +560,7 @@ python3 comparador.py
 
 ## Ejecución del Código 4
 
-![ejecucion4](ejecucion4.png)
+![ejecucion4](img/ejecucion4.png)
 
 ## Conclusiones:
 
