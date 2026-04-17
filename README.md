@@ -8,8 +8,29 @@
 
 # 2026, Bogotá
 
+# Introducción:
 
+El presente trabajo corresponde al segundo parcial de la asignatura Lenguajes de Programación, en el cual se abordan distintos conceptos fundamentales del diseño e implementación de lenguajes formales y analizadores sintácticos.
 
+El proyecto integra múltiples componentes que permiten comprender cómo se construyen lenguajes de programación, cómo se procesan sus estructuras y cómo varía el rendimiento de los analizadores dependiendo del enfoque utilizado. Además, se desarrollan aplicaciones prácticas como un lenguaje de consultas tipo CRUD y una calculadora booleana, reforzando la relación entre teoría y práctica en el área de compiladores.
+
+# Objetivo General:
+
+Diseñar, implementar y analizar diferentes gramáticas y algoritmos de análisis sintáctico, evaluando su comportamiento y rendimiento mediante el desarrollo de aplicaciones prácticas como un lenguaje CRUD para bases de datos no relacionales y una calculadora booleana.
+
+# Objetivos Específicos:
+
+• Diseñar una gramática formal para un lenguaje de consultas CRUD orientado a bases de datos no relacionales.
+
+• Implementar dicha gramática utilizando herramientas de generación de analizadores sintácticos como Bison y ANTLR, validando su correcto funcionamiento mediante pruebas.
+
+• Analizar formalmente una gramática dada, calculando los conjuntos PRIMERO, SIGUIENTE y PREDICCIÓN, con el fin de demostrar que cumple la propiedad LL(1).
+
+• Implementar un parser basado en el algoritmo CYK y compararlo con un parser predictivo LL(1), evaluando su rendimiento mediante pruebas experimentales y gráficas.
+
+• Desarrollar una calculadora de escritorio utilizando YACC (Bison) y Flex, capaz de evaluar expresiones booleanas, analizando el desempeño del analizador sintáctico generado.
+
+• Comparar diferentes enfoques de parsing (LL(1), LALR(1) y CYK), identificando sus ventajas, desventajas y aplicabilidad en el diseño de lenguajes.
 
 # Punto 1 y 2:
 
@@ -659,8 +680,6 @@ Se encarga de:
 - Definir la gramática
 - Evaluar expresiones
 - Aplicar precedencia de operadores
-
-## Punto 5: Calculadora Booleana de Escritorio
 
 Esta entrega también incluye la **Calculadora Booleana de Escritorio** (`Punto5/`), desarrollada interactuando no con línea de comandos paso a paso sino analizando directamente un archivo `.txt` (`pruebas.txt`), demostrando manejo de I/O sobre Flex y Bison sin modo interactivo.
 
