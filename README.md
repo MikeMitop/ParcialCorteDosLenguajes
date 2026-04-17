@@ -256,6 +256,11 @@ nuevo usuario { nombre: "Test" }   # comentario al final de línea
 ![ejecucion1y2-2](ejecucion1y2-2.png)
 
 # Punto 3;
+## Jerarquía de carpetas:
+```
+ParcialCorteDos/Punto3
+├── gramatica.py           ← Programa principal
+```
 
 ## Gramática LL(1)
 
@@ -449,9 +454,21 @@ python3 gramatica.py
 
 ## Ejecución del Código 3
 
-![ejecucion3](ejecucion3.png)
+![ejecucion3](img/ejecucion3.png)
 
 # Punto 4
+
+## Jerarquia de carpetas:
+```
+Punto4/
+│
+├── comparador.py        # Script principal (benchmark y ejecución)
+├── cyk.py               # Implementación del algoritmo CYK
+├── ll1.py               # Parser predictivo LL(1)
+├── graficas.py          # Generación de gráficas
+├── gramatica_cyk.txt    # Gramática en CNF usada por CYK
+├── out.txt              # Resultados de ejecución (opcional)
+``
 
 Implementación de un Parser utilizando el algoritmo CYK para realizar operaciones de una calculadora, para compararlas con un parser de tipo predictivo para comparar su rendimiento.
 
@@ -550,6 +567,27 @@ python3 comparador.py
 El parser LL(1) presenta un desempeño significativamente superior al algoritmo CYK, debido a su complejidad lineal frente al crecimiento cúbico de CYK. Los resultados y las gráficas obtenidas confirman que CYK es menos eficiente para este tipo de gramáticas determinísticas.
 
 # Punto 5:
+
+## Jerarquia de Carpetas:
+
+├── Punto5/
+│   ├──                         # Código fuente
+│   │   ├── calculadora_de_escritorio.y
+│   │   ├── lexer_calculadora.l
+│   │   └── pruebas.txt
+│   │
+│   ├──                    # Archivos generados
+│   │   ├── calculadora_de_escritorio.tab.c
+│   │   ├── calculadora_de_escritorio.tab.h
+│   │   ├── lex.yy.c
+│   │   └── calculadora              # ejecutable
+│   │
+│   ├── 
+│   │   └── out.log
+│   │
+│   └── 
+│       └── test_lex.c
+│
 
 Calculadora de Escritorio:
 
@@ -678,7 +716,7 @@ gcc lex.yy.c calculadora_de_escritorio.tab.c -o calculadora -lm
 
 ## Ejecución del Código 5
 
-![ejecucion5](ejecucion5.png)
+![ejecucion5](img/ejecucion5.png)
 
 ## Conclusión del Ejercicio:
 
