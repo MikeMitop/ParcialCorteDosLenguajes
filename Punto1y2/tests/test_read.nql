@@ -1,0 +1,28 @@
+# ════════════════════════════════════════════════════════════════════
+# test_read.nql — Pruebas para la operación READ (buscar)
+# ════════════════════════════════════════════════════════════════════
+
+# Poblar la colección
+nuevo usuario { nombre: "Juan", edad: 25, activo: true }
+nuevo usuario { nombre: "Ana", edad: 30, activo: true }
+nuevo usuario { nombre: "Carlos", edad: 17, activo: false }
+nuevo usuario { nombre: "Maria", edad: 22, activo: true }
+nuevo usuario { nombre: "Pedro", edad: 35, activo: false }
+
+# Leer todos los documentos
+buscar usuario
+
+# Filtrar por igualdad (= )
+buscar usuario donde nombre = "Ana"
+
+# Filtrar por menor que (<)
+buscar usuario donde edad < 20
+
+# Filtrar por mayor o igual (>=)
+buscar usuario donde edad >= 30
+
+# Filtrar booleano
+buscar usuario donde activo = false
+
+# Colección inexistente
+buscar pedidos

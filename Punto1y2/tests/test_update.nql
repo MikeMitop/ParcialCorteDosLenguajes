@@ -1,0 +1,26 @@
+# ════════════════════════════════════════════════════════════════════
+# test_update.nql — Pruebas para la operación UPDATE (actualizar)
+# ════════════════════════════════════════════════════════════════════
+
+# Poblar colección
+nuevo usuario { nombre: "Juan", edad: 25, ciudad: "Bogota" }
+nuevo usuario { nombre: "Ana", edad: 30, ciudad: "Medellin" }
+nuevo usuario { nombre: "Carlos", edad: 17, ciudad: "Cali" }
+
+# Ver estado inicial
+buscar usuario
+
+# Actualizar edad de Juan
+actualizar usuario asignar edad = 30 donde nombre = "Juan"
+
+# Actualizar sin filtro (afecta todos)
+actualizar usuario asignar activo = true
+
+# Verificar cambios
+buscar usuario
+
+# Actualizar con nueva clave (campo nuevo)
+actualizar usuario asignar pais = "Colombia" donde ciudad = "Bogota"
+
+# Ver resultado final
+buscar usuario donde pais = "Colombia"

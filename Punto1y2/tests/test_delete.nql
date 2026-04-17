@@ -1,0 +1,31 @@
+# ════════════════════════════════════════════════════════════════════
+# test_delete.nql — Pruebas para la operación DELETE (eliminar)
+# ════════════════════════════════════════════════════════════════════
+
+# Poblar colección
+nuevo usuario { nombre: "Juan", edad: 25 }
+nuevo usuario { nombre: "Ana", edad: 30 }
+nuevo usuario { nombre: "Carlos", edad: 17 }
+nuevo usuario { nombre: "Maria", edad: 15 }
+nuevo usuario { nombre: "Pedro", edad: 35 }
+
+# Ver estado inicial
+buscar usuario
+
+# Eliminar menores de 18
+eliminar usuario donde edad < 18
+
+# Verificar eliminación
+buscar usuario
+
+# Eliminar usuario específico
+eliminar usuario donde nombre = "Pedro"
+
+# Verificar
+buscar usuario
+
+# Eliminar todos (sin filtro)
+eliminar usuario
+
+# Debe estar vacía
+buscar usuario

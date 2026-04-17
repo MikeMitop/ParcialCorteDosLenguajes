@@ -1,0 +1,17 @@
+# ════════════════════════════════════════════════════════════════════
+# test_create.nql — Pruebas para la operación CREATE (nuevo)
+# ════════════════════════════════════════════════════════════════════
+
+# Insertar usuarios
+nuevo usuario { nombre: "Juan", edad: 25, activo: true }
+nuevo usuario { nombre: "Ana", edad: 30, activo: true }
+nuevo usuario { nombre: "Carlos", edad: 17, activo: false }
+nuevo usuario { nombre: "Maria", edad: 22, activo: true }
+
+# Insertar productos
+nuevo producto { nombre: "Laptop", precio: 1500.99, stock: 10 }
+nuevo producto { nombre: "Mouse", precio: 25.50, stock: 100 }
+
+# Verificar lectura completa
+buscar usuario
+buscar producto

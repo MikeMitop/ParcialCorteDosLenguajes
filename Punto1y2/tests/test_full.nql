@@ -1,0 +1,56 @@
+# ════════════════════════════════════════════════════════════════════
+# test_full.nql — Prueba integral CRUD completa (múltiples colecciones)
+# ════════════════════════════════════════════════════════════════════
+
+# ── FASE 1: CREATE ────────────────────────────────────────────────
+nuevo usuario { nombre: "Juan", edad: 25, activo: true }
+nuevo usuario { nombre: "Ana", edad: 30, activo: true }
+nuevo usuario { nombre: "Carlos", edad: 17, activo: false }
+nuevo usuario { nombre: "Maria", edad: 22, activo: true }
+
+nuevo producto { codigo: "P001", nombre: "Laptop", precio: 1500, stock: 10 }
+nuevo producto { codigo: "P002", nombre: "Mouse", precio: 25, stock: 100 }
+nuevo producto { codigo: "P003", nombre: "Teclado", precio: 45, stock: 50 }
+
+nuevo pedido { cliente: "Juan", producto: "Laptop", cantidad: 1, estado: "pendiente" }
+nuevo pedido { cliente: "Ana", producto: "Mouse", cantidad: 3, estado: "enviado" }
+
+# ── FASE 2: READ ──────────────────────────────────────────────────
+buscar usuario
+buscar producto
+buscar pedido
+
+# Filtros
+buscar usuario donde edad >= 22
+buscar producto donde precio < 100
+buscar pedido donde estado = "pendiente"
+
+# ── FASE 3: UPDATE ────────────────────────────────────────────────
+# Activar a Carlos
+actualizar usuario asignar activo = true donde nombre = "Carlos"
+
+# Actualizar stock del producto P001
+actualizar producto asignar stock = 9 donde codigo = "P001"
+
+# Cambiar estado del pedido de Juan
+actualizar pedido asignar estado = "enviado" donde cliente = "Juan"
+
+# Verificar cambios
+buscar usuario donde nombre = "Carlos"
+buscar producto donde codigo = "P001"
+buscar pedido
+
+# ── FASE 4: DELETE ────────────────────────────────────────────────
+# Eliminar usuarios menores de 18
+eliminar usuario donde edad < 18
+
+# Eliminar productos sin stock
+eliminar producto donde stock = 0
+
+# Eliminar pedido de Ana
+eliminar pedido donde cliente = "Ana"
+
+# Estado final
+buscar usuario
+buscar producto
+buscar pedido
